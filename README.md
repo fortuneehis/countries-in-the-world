@@ -4,5 +4,4 @@ install the dependencies via:
 
 open to contributions :)
 
-live url: countries in the world
-[Countries in the World](https://countries-in-the-world.netlify.app/)
+live url: [Countries in the World](https://countries-in-the-world.netlify.app/)
