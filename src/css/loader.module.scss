@@ -1,0 +1,21 @@
+@import './variables';
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    .loader {
+        background-color: $accentColor;
+        padding: 30px;
+        width: 150px;
+        height: 150px;
+    }
+}

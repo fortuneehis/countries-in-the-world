@@ -1,0 +1,5 @@
+export const GET_ALL_COUNTRIES = 'GET_ALL_COUNTRIES'
+export const GET_COUNTRY = 'GET_COUNTRY'
+export const LOADING = 'LOADING'
+export const ERROR = 'ERROR'
+export const HAS_MORE = 'HAS_MORE'

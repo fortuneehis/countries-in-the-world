@@ -1,0 +1,25 @@
+@import './variables';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba($color: #000000, $alpha: .9);
+    z-index: 30;
+
+    svg {
+        margin: 10px;
+        fill: none;
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo {
+        fill: none;
+        stroke: $accentColor;
+        stroke-width: 4px;
+    }
+}

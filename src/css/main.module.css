@@ -1,0 +1,193 @@
+.home {
+  position: relative;
+  background-color: #131418;
+  background-image: url("../svg/worldLow.svg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50vh;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+
+.home .container {
+  text-align: center;
+  margin: 0 20px;
+  color: #1AB7EA;
+}
+
+.home .container h1 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.home .container p {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  word-wrap: wrap;
+}
+
+.row {
+  margin: 0 40px;
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row .column {
+  background-color: #eeeeee;
+  width: 100%;
+  padding: 20px 10px;
+  margin: 20px 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  color: #131418;
+  text-align: center;
+  cursor: pointer;
+}
+
+.row .column h1 {
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.row .column .img {
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.row .column .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.row .column .wrapper .icongroup {
+  text-align: center;
+  width: 30%;
+}
+
+.row .column .wrapper .icongroup svg {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  fill: #ffffff;
+  background-color: #131418;
+}
+
+.row .column .wrapper .icongroup p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #131418;
+}
+
+.row .error {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #ff4658;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  z-index: 50;
+}
+
+.row .error button {
+  padding: 10px 25px;
+  margin-left: 10px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: #ff4658;
+}
+
+.paginator {
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+.paginator button {
+  border: none;
+  background: none;
+}
+
+.paginator button svg {
+  width: 40px;
+  height: 40px;
+  fill: #eeeeee;
+  background-color: #1AB7EA;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 620px) {
+  .home .container {
+    margin: 0 70px;
+  }
+  .home .container h1 {
+    font-size: 40px;
+  }
+  .row {
+    margin: 0 20px;
+    margin-top: 90px;
+  }
+  .row .column {
+    width: 40%;
+  }
+  .row .column .wrapper .icongroup svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .row .column {
+    width: 40%;
+    margin: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .row .column {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=main.module.css.map */

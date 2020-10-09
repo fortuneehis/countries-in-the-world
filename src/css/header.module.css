@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 30;
+}
+
+.header svg {
+  margin: 10px;
+  fill: none;
+  width: 30px;
+  height: 30px;
+}
+
+.header .logo {
+  fill: none;
+  stroke: #1AB7EA;
+  stroke-width: 4px;
+}
+/*# sourceMappingURL=header.module.css.map */

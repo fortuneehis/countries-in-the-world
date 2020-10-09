@@ -1,0 +1,114 @@
+@import './variables';
+
+.wrapper {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: $darkColor, $alpha: .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        position: relative;
+        background-color: $primaryColor;
+        border-radius: 20px;
+        width: 100%; 
+        margin: 0 30px;
+        padding-bottom: 20px;
+        overflow: hidden;
+
+        button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: $darkColor;
+            border: 2px solid $primaryColor;
+            border-radius: 50%;
+            color: $primaryColor;
+            cursor: pointer;
+            padding: 10px 15px;
+            
+        }
+        .map {
+                width: 100%;
+                height: 200px;
+                background-color: $neutral;
+        }
+        .properties {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+           
+
+            .content {
+                width: 40%;
+                margin-top: 20px;
+                padding-left: 5px;
+
+                h3 {
+                    color: $accentColor;
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .borders {
+                padding-left: 10px;
+                margin-top: 20px;
+                width: 100%;
+                h3 {
+                    text-align: left;
+                    color: $accentColor;  
+                }
+
+                .items {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li {
+                        padding: 5px 30px;
+                        margin: 10px 0;
+                        margin-right: 10px;
+                        background-color: $neutral;
+                        border-radius: 20px;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .wrapper {
+        .container {
+            width: 550px;
+
+            .map {
+                height: 250px;
+            }
+
+            .properties {
+                .content {
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+
+                .borders {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
